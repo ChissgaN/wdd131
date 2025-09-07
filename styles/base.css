@@ -1,0 +1,178 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: #184c74;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0 0 0;
+}
+
+#course-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#course-title span {
+  color: #f0c000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: #3b3b3b;
+  font-family: sans-serif;
+}
+
+nav a {
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  background: #555;
+}
+
+/* MAIN LAYOUT */
+main {
+  max-width: 1100px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* CARD STYLES */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #fff;
+}
+
+.card h2 {
+  background: #184c74;
+  color: #fff;
+  padding: 0.5rem;
+  margin: -1.5rem -1.5rem 1rem -1.5rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 25%;
+  border-radius: 4px;
+}
+
+/* ABOUT ME SECTION */
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.about-text {
+  flex: 2;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-photo img {
+  flex: 1;
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* COUNTRY SECTION */
+.country-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.country-flag {
+    display: flex;
+    justify-content: center;
+}
+
+.country-flag img {
+  width: 225px;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.country-flag p {
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.country-text {
+  flex: 2;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* RESOURCE LINKS */
+.card ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.card ul li {
+  margin: 0.5rem 0;
+}
+
+.card ul li a {
+  color: #184c74;
+  text-decoration: none;
+}
+
+.card ul li a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  background: #184c74;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+#lastModified {
+  color: #f0c000;
+}
