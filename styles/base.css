@@ -10,7 +10,6 @@ body {
   min-height: 100vh;
 }
 
-/* Header */
 header {
   background: linear-gradient(135deg, #2c5f7f 0%, #1e4a62 100%);
   color: white;
@@ -29,7 +28,6 @@ header h1 {
   color: #ffd700;
 }
 
-/* Navigation */
 .nav-links{
   background-color: #3b3b3b;
 }
@@ -98,7 +96,6 @@ nav ul a:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* Main Content */
 .main-content {
   max-width: 1200px;
   margin: 30px auto;
@@ -142,7 +139,6 @@ nav ul a:hover {
   object-fit: cover;
   flex-shrink: 0;
 }
-
 
 .resources-list {
   list-style: none;
