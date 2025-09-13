@@ -7,6 +7,13 @@ const temples = [
     image: "images/temples/washington-temple.webp",
   },
   {
+    name: "Quetzaltenango",
+    location: "Guatemala",
+    year: 2011,
+    size: 160000,
+    image: "images/temples/quetzaltenango-temple.webp",
+  },
+  {
     name: "Fiji",
     location: "Fiji",
     year: 2000,
