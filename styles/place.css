@@ -158,3 +158,8 @@ main {
     display: inline-block;
   }
 }
+
+.footer-content::after {
+  content: "👨‍💻";
+  margin-left: 0.25rem;
+}
