@@ -1,0 +1,160 @@
+:root {
+  --primary-color: #fd0404;
+  --secondary-color: #1c1b5e;
+  --light-bg: #f9f9f9;
+  --text-dark: #222;
+  --text-light: #fff;
+  --max-width: 1200px;
+  --spacing: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", "Roboto", sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header,
+footer {
+  background: var(--primary-color);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+.footer-content {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.last-modified {
+  font-size: 14px;
+  color: #ffd700;
+}
+
+main {
+  display: grid;
+  gap: var(--spacing);
+  padding: var(--spacing);
+}
+
+@media (min-width: 769px) {
+  main {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: url("../images/place/quetzaltenango.webp") center/cover no-repeat;
+    background-size: cover;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .data,
+  .weather {
+    position: absolute;
+    z-index: 2;
+    max-width: 300px;
+  }
+
+  .data {
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .weather {
+    bottom: 2rem;
+    right: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+  }
+
+  .hero-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+  }
+
+  .data,
+  .weather {
+    position: relative;
+    margin: 1rem 0;
+    max-width: 90%;
+    left: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+.data,
+.weather {
+  background: rgba(255, 255, 255, 0.9);
+  padding: var(--spacing);
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.data h2,
+.weather h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--secondary-color);
+  color: var(--text-light);
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.weather ul,
+.data ul {
+  list-style: none;
+}
+
+.weather .temp {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.weather .temp svg {
+  width: 24px;
+  height: 24px;
+}
+
+.weather h2 svg {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .weather h2 svg {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      WDD 131 – Dynamic Web Fundamentals - Jairo Noodli Castro Castillo - Place
+    </title>
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals - Jairo Noodli Castro Castillo - Place"
+    />
+    <meta name="author" content="Jairo Noodli Castro Castillo" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Quetzaltenango</h1>
+    </header>
+
+    <main>
+      <picture>
+        <source
+          srcset="images/place/quetzaltenango.webp"
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="images/place/quetzaltenango.webp"
+          media="(min-width: 600px)"
+        />
+        <img
+          src="images/place/quetzaltenango.webp"
+          alt="Quetzaltenango, Guatemala"
+          class="hero-img"
+        />
+      </picture>
+
+      <section class="data">
+        <h2>Data</h2>
+        <ul class="data-list">
+          <li><span>Country:</span> Guatemala</li>
+          <li><span>Department:</span> Quetzaltenango</li>
+          <li><span>Area:</span> 1,951 km²</li>
+          <li><span>Altitude:</span> 2,333 m (7,655 ft)</li>
+          <li><span>Language:</span> Spanish, K’iche’</li>
+          <li><span>Currency:</span> Quetzal (GTQ)</li>
+          <li><span>Time Zone:</span> UTC -6</li>
+        </ul>
+      </section>
+
+      <section class="weather">
+        <h2>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            viewBox="0 0 64 64"
+          >
+            <g>
+              <circle cx="32" cy="20" r="12" fill="#FFD93B" />
+              <ellipse cx="32" cy="36" rx="20" ry="12" fill="#C0C0C0" />
+            </g>
+          </svg>
+          Weather
+        </h2>
+        <ul>
+          <li><span>Temperature:</span> 12 °C (average, cool highlands)</li>
+          <li><span>Conditions:</span> Partly Cloudy</li>
+          <li><span>Wind:</span> 10 km/h</li>
+          <li><span>Wind Chill:</span> <span id="windchill"></span></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p class="footer-content">
+        ©<span id="currentYear">2025</span> <span>👨‍💻</span> Jairo Noodli Castro
+        Castillo <span>👨‍💻</span> Guatemala
+      </p>
+      <p class="last-modified">
+        Last Modification: <span id="lastModified"></span>
+      </p>
+    </footer>
+  </body>
+</html>
